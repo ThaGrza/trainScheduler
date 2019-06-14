@@ -27,8 +27,8 @@ h3{
     width: 100%;
 }
 /* Sets style train dispay container. */
-.schedContainer {
-    margin-top: 3%;
+.data-container {
+    margin-top: 2%;
     border-width: 2px;
     border-color: rgba(2, 112, 216, 0.753);
     border-style: solid;
@@ -39,12 +39,31 @@ th, td{
     padding-top: 10px;
     text-align: center;
 }
+/* Styling for rows. */
 tr{
     border-style: solid;
     border-bottom-width: 1px;
     border-color: grey;
     border-width: 1px;
 }
-
-
+/* Styling for form boxes. */
+form {
+    margin-inline-start: 13px;
+}
+/* Styling for form boxes. */
+.form-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+/* Styling for form input Button */
+.btn{
+    background-color:rgba(2, 112, 216, 0.753);
+    color: white;
+    border: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px; 
+}
 

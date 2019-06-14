@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -18,7 +19,7 @@
             <div><h2>Choo Choo. Chee chee.</h2></div>
         </div>
         <!-- Creates train scheduler box. -->
-        <div class="schedContainer">
+        <div class="data-container">
             <h3>Current Train Schedule</h3>
             <table id="trainSched">
                 <tr>
@@ -30,10 +31,26 @@
                 </tr>
             </table>
         </div>
+        <div id="addTrain" class="data-container">
+            <h3>Add Train</h3>
+                <form action="#">
+                    Train Name <br>
+                    <input class = "form-input" type="text" id="trainName"> <br>
+                    Destination <br>
+                    <input class = "form-input" type="text" id="destination"> <br>
+                    First Train Time( HH:mm - military time) <br>
+                    <input class = "form-input" type="text" id="trainTime"> <br>
+                    Frequency (min)<br>
+                    <input class = "form-input" type="text" id="freq">
+                    <br><br>
+                    <button class="btn" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 
 
 
-    <script rel="javascript" src="assets/javascript/app.js"></script>
+    <script rel="javascript" src="assets/js/app.js"></script>
 </body>
 </html>
