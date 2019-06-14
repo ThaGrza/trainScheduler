@@ -1,0 +1,50 @@
+/* Sets pages margins. */
+.container {
+    margin-left: 2%;
+    margin-right: 6%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/* Sets heading box and text styles. */
+#heading {
+    background-color: rgb(122, 55, 23);
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+}
+/* Styling for train container header. */
+h3{
+    background-color:rgba(2, 112, 216, 0.753);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    margin: 0px;
+    color: white;
+}
+/* Spans container. */
+#trainSched{
+    width: 100%;
+}
+/* Sets style train dispay container. */
+.schedContainer {
+    margin-top: 3%;
+    border-width: 2px;
+    border-color: rgba(2, 112, 216, 0.753);
+    border-style: solid;
+    padding: 0px;
+}
+/* Styling for table hedders. */
+th, td{
+    padding-top: 10px;
+    text-align: center;
+}
+tr{
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-color: grey;
+    border-width: 1px;
+}
+
+
+
