@@ -7,7 +7,7 @@
 }
 /* Sets heading box and text styles. */
 #heading {
-    background-color: rgb(122, 55, 23);
+    background-color: rgba(0, 0, 0, 0.863);
     text-align: center;
     padding: 30px;
     color: white;
