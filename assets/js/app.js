@@ -26,6 +26,7 @@ $("#submit").on("click", function(event){
     dest = $("#destination").val().trim();
     trainTime = $("#trainTime").val().trim();
     freq = $("#freq").val().trim();
+    
 
     database.ref().push({
         train: tname,
@@ -36,10 +37,10 @@ $("#submit").on("click", function(event){
 });
 // Writes to html with data from firebase.
 database.ref().on("child_added", function(childSnapshot){
-    var newTrain = childSnapshot.val().tname;
-    var newDest = childSnapshot.val().dest;
-    var newTime = childSnapshot.val().trainTime
-    var newFreq = childSnapshot.val().freq;
+    var newTrain = childSnapshot.val().train;
+    var newDest = childSnapshot.val().destination;
+    var newTime = childSnapshot.val().time;
+    var newFreq = childSnapshot.val().frequency;
 
     // Logic for getting time differentials.
     var convertedTime = moment(newTime, "hh:mm").subtract(1, "years");
@@ -53,14 +54,19 @@ database.ref().on("child_added", function(childSnapshot){
     var minsAway = newFreq - tDif;
 
     
-    // Writes data to html.
-    $("#trainSched").append(
-        "<tr>" + "<td>" + newTrain,
-        "</td><td" + newDest +
-        "</td><td" + newTime +
-        "</td><td" + newFreq +
-        "</td><td" + minsAway + "</td></tr>"
-    );
+    // // Writes data to html.
+    // $("#trainSched").append(
+    //     "<tr>" + "<td>" + newTrain +
+    //     "</td><td" + newDest +
+    //     "</td><td" + newTime +
+    //     "</td><td" + newFreq +
+    //     "</td><td" + minsAway + "</td></tr>"
+    // );
+
+    var trainAppend = "<tr>" + "<td>" + newTrain + "<td>" + newDest + "<td>" + newTime + "<td>" + newFreq + "<td>" + minsAway + "</td></tr>";
+
+    $("#trainSched").append(trainAppend);
+        
 
 
 
