@@ -1,14 +1,14 @@
-// const firebaseStuff = require('dotenv').config()
+require('dotenv').config()
 
 // Initilizes firebase.
 const config = {
-    apiKey: "AIzaSyBF4O9sHqDEqk3Omu4PLAW_xYP5lNwO1DE",
+    apiKey: APIKEY,
     authDomain: "newjuneproj.firebaseapp.com",
     databaseURL: "https://newjuneproj.firebaseio.com",
     projectId: "newjuneproj",
     storageBucket: "newjuneproj.appspot.com",
-    messagingSenderId: "199827500776",
-    appId: "1:199827500776:web:20de98c023522e29"
+    messagingSenderId: SENDERID,
+    appId: APPID
     };
 firebase.initializeApp(config);
 

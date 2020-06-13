@@ -4,10 +4,10 @@
 ![Screenshot](assets/images/screenshot.png)
 
 ## Motivation
-Jewel Collector is a fun small game to practice Jquery.
+Train Scheduler is a simply web app to practice Google Firebase.
 
 ## How to
-To play Jewel Collector simpling go to https://ThaGrza.github.io/JewelCollector and click on any jewel to begin. Click and see the different values of each jewel and try to match the target score.
+To use Train Scheduler simply go to https://thagrza.github.io/trainScheduler/ , and enter a Name and Destination for your train, along with it's Time and Frequency!
 
 ## Build Status
 N/A
@@ -23,10 +23,9 @@ N/A
 N/A
 
 ## Installation
-N/A
 
 ## API Reference
-N/A
+[Google Firebase](https://firebase.google.com/)
 
 ## Credits
 Andrew Griswold
