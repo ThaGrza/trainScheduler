@@ -1,3 +1,5 @@
+// const firebaseStuff = require('dotenv').config()
+
 // Initilizes firebase.
 const config = {
     apiKey: "AIzaSyBF4O9sHqDEqk3Omu4PLAW_xYP5lNwO1DE",
