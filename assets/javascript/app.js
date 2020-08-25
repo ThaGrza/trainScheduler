@@ -3,12 +3,13 @@ require('dotenv').config()
 // Initilizes firebase.
 const config = {
     apiKey: APIKEY,
-    authDomain: "newjuneproj.firebaseapp.com",
-    databaseURL: "https://newjuneproj.firebaseio.com",
-    projectId: "newjuneproj",
-    storageBucket: "newjuneproj.appspot.com",
-    messagingSenderId: SENDERID,
-    appId: APPID
+  authDomain: "train-scheduler-99d17.firebaseapp.com",
+  databaseURL: "https://train-scheduler-99d17.firebaseio.com",
+  projectId: "train-scheduler-99d17",
+  storageBucket: "train-scheduler-99d17.appspot.com",
+  messagingSenderId: SENDERID,
+  appId: APPID,
+  measurementId: "G-3XM3X3PCB2"
     };
 firebase.initializeApp(config);
 
