@@ -1,16 +1,17 @@
-require('dotenv').config()
+// require('dotenv').config();
 
 // Initilizes firebase.
 const config = {
-    apiKey: APIKEY,
+    apiKey: "AIzaSyBzoKyrEIzS7-Qoas-R4byctux2dHrnNFM",
   authDomain: "train-scheduler-99d17.firebaseapp.com",
   databaseURL: "https://train-scheduler-99d17.firebaseio.com",
   projectId: "train-scheduler-99d17",
   storageBucket: "train-scheduler-99d17.appspot.com",
-  messagingSenderId: SENDERID,
-  appId: APPID,
+  messagingSenderId: "823432453940",
+  appId: "1:823432453940:web:18b43fded6e5658a738f61",
   measurementId: "G-3XM3X3PCB2"
     };
+
 firebase.initializeApp(config);
 
 // Creates reference for firebase databse
@@ -29,7 +30,7 @@ $("#submit").on("click", function(event){
     dest = $("#destination").val().trim();
     trainTime = $("#trainTime").val().trim();
     freq = $("#freq").val().trim();
-    
+    console.log(tname);
 
     database.ref().push({
         train: tname,
@@ -55,16 +56,6 @@ database.ref().on("child_added", function(childSnapshot){
     var tDif = diffTime % newFreq;
 
     var minsAway = newFreq - tDif;
-
-    
-    // // Writes data to html.
-    // $("#trainSched").append(
-    //     "<tr>" + "<td>" + newTrain +
-    //     "</td><td" + newDest +
-    //     "</td><td" + newTime +
-    //     "</td><td" + newFreq +
-    //     "</td><td" + minsAway + "</td></tr>"
-    // );
 
     var trainAppend = "<tr>" + "<td>" + newTrain + "<td>" + newDest + "<td>" + newTime + "<td>" + newFreq + "<td>" + minsAway + "</td></tr>";
 
