@@ -37,6 +37,8 @@ $("#submit").on("click", function(event){
         time: trainTime,
         frequency: freq
     });
+
+    document.getElementById("train-form").reset();
 });
 // Writes to html with data from firebase.
 database.ref().on("child_added", function(childSnapshot){
