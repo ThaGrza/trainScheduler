@@ -30,7 +30,6 @@ $("#submit").on("click", function(event){
     dest = $("#destination").val().trim();
     trainTime = $("#trainTime").val().trim();
     freq = $("#freq").val().trim();
-    console.log(tname);
 
     database.ref().push({
         train: tname,
@@ -57,7 +56,7 @@ database.ref().on("child_added", function(childSnapshot){
 
     var minsAway = newFreq - tDif;
 
-    var trainAppend = "<tr>" + "<td>" + newTrain + "<td>" + newDest + "<td>" + newTime + "<td>" + newFreq + "<td>" + minsAway + "</td></tr>";
+    var trainAppend = "<tr>" + "<td>" + newTrain + "<td>" + newDest + "<td>" + newFreq + "<td>" + newTime + "<td>" + minsAway + "</td></tr>";
 
     $("#trainSched").append(trainAppend);
         
