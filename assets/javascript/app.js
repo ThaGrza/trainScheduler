@@ -26,19 +26,25 @@ var freq = 0;
 // Pushes info to firebase when button is clicked.
 $("#submit").on("click", function(event){
     event.preventDefault();
+    let blank = "";
     tname = $("#trainName").val().trim();
     dest = $("#destination").val().trim();
     trainTime = $("#trainTime").val().trim();
     freq = $("#freq").val().trim();
+    console.log(tname, dest, trainTime, freq);
 
-    database.ref().push({
-        train: tname,
-        destination: dest,
-        time: trainTime,
-        frequency: freq
-    });
+    if (tname == blank || dest == blank || trainTime == blank || freq == blank){
+        alert("Cannot leave any spaces blank.");
+    }else{
+        database.ref().push({
+            train: tname,
+            destination: dest,
+            time: trainTime,
+            frequency: freq
+        })
+        document.getElementById("train-form").reset();
 
-    document.getElementById("train-form").reset();
+    }
 });
 // Writes to html with data from firebase.
 database.ref().on("child_added", function(childSnapshot){
