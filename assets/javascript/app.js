@@ -1,15 +1,16 @@
 // require('dotenv').config();
 
 // Initilizes firebase.
+
 const config = {
     apiKey: "AIzaSyBzoKyrEIzS7-Qoas-R4byctux2dHrnNFM",
-  authDomain: "train-scheduler-99d17.firebaseapp.com",
-  databaseURL: "https://train-scheduler-99d17.firebaseio.com",
-  projectId: "train-scheduler-99d17",
-  storageBucket: "train-scheduler-99d17.appspot.com",
-  messagingSenderId: "823432453940",
-  appId: "1:823432453940:web:18b43fded6e5658a738f61",
-  measurementId: "G-3XM3X3PCB2"
+    authDomain: "train-scheduler-99d17.firebaseapp.com",
+    databaseURL: "https://train-scheduler-99d17.firebaseio.com",
+    projectId: "train-scheduler-99d17",
+    storageBucket: "train-scheduler-99d17.appspot.com",
+    messagingSenderId: "823432453940",
+    appId: "1:823432453940:web:18b43fded6e5658a738f61",
+    measurementId: "G-3XM3X3PCB2"
     };
 
 firebase.initializeApp(config);
