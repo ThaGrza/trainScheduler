@@ -67,3 +67,28 @@ form {
     padding-left: 10px; 
 }
 
+.footer-container {
+    text-align: center;
+}
+
+.footerIcons{
+    display: flex;
+    place-content: center;
+}
+.dateName{
+    margin: none;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+.social-icon{
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: auto;
+    height: 50%;
+}
+
+.name{
+    margin: 0;
+}
